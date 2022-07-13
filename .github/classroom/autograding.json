@@ -1,0 +1,54 @@
+{
+  "tests": [
+    {
+      "name": "Test1",
+      "setup": "",
+      "run": "python3 grocery.py",
+      "input": "apples bananas bread sauce onions\r\nchocolate apples grapes bread",
+      "output": "['apples', 'bananas', 'bread', 'sauce', 'onions', 'chocolate', 'grapes']",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Test2",
+      "setup": "",
+      "run": "python3 grocery.py",
+      "input": "apples bananas bread bananas\r\ngrapes",
+      "output": "['apples', 'bananas', 'bread', 'grapes']",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Test3",
+      "setup": "",
+      "run": "python3 grocery.py",
+      "input": "apples bananas bread bananas\r\n\r\n",
+      "output": "['apples', 'bananas', 'bread']",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Test4",
+      "setup": "",
+      "run": "python3 grocery.py",
+      "input": "pasta\r\npasta",
+      "output": "['pasta']",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    },
+    {
+      "name": "Test5",
+      "setup": "",
+      "run": "python3 grocery.py",
+      "input": "broccoli cabbage chicken\r\ncorn cheese cabbage",
+      "output": "['broccoli', 'cabbage', 'chicken', 'corn', 'cheese']",
+      "comparison": "included",
+      "timeout": 1,
+      "points": 20
+    }
+  ]
+}
